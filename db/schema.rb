@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170222114443) do
+ActiveRecord::Schema.define(version: 20170222182949) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 20170222114443) do
     t.datetime "updated_at",   null: false
     t.float    "x_position"
     t.float    "y_position"
+    t.integer  "width"
+    t.integer  "height"
     t.index ["moodboard_id"], name: "index_assets_on_moodboard_id", using: :btree
   end
 

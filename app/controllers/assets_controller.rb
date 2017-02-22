@@ -46,6 +46,6 @@ class AssetsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def asset_params
-      params.require(:asset).permit(:url, :moodboard_id, :x_position, :y_position)
+      params.require(:asset).permit(:url, :moodboard_id, :x_position, :y_position, :height, :width)
     end
 end
